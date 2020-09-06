@@ -44,11 +44,13 @@ const TodoList = () => {
     };
 
     return (
-        <div className="todo-list">
+        <div>
             <TodoForm addTodo={addTodo} />
-            {todos.map(t =>
-                <Todo key={t.id} todo={t} switchTodoStatus={switchTodoStatus} deleteTodo={deleteTodo} />
-            )}
+            <ul className="todo-list">
+                {todos.map(t =>
+                    <Todo key={t.id} todo={t} switchTodoStatus={switchTodoStatus} deleteTodo={deleteTodo} />
+                )}
+            </ul>
         </div>
     );
 

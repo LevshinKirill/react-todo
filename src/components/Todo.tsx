@@ -9,15 +9,12 @@ interface ITodoComponent {
 const Todo = (props: ITodoComponent) => {
 
     return (
-        <div className="todo">
-            <label>{props.todo.task}</label>
-            <input type="checkbox" className="checkbox" defaultChecked={props.todo.isCompleted}
-                onClick={() => props.switchTodoStatus(props.todo.id)}
-            />
-            <button
-                onClick={() => props.deleteTodo(props.todo.id)}>x
-            </button>
-        </div>
+        <li
+            className={props.todo.isCompleted ? "checked todo" : "todo"}
+        >
+            <span onClick={() => props.switchTodoStatus(props.todo.id)} className="todo-text">{props.todo.task}</span>
+            <span onClick={() => props.deleteTodo(props.todo.id)} className="close">x</span>
+        </li>
     );
 
 };

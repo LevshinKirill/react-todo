@@ -1,7 +1,11 @@
 import React from 'react';
 import TodoList from './components/TodoList';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 export default function App() {
-    return <TodoList />
+    return (
+        <div className="container">
+            <TodoList />
+        </div>
+    )
 }
