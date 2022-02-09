@@ -1,20 +1,38 @@
-# react-todo
-### Setup
+# REACT_TODO
 
-- If you want to run this code you need:
+## About the application
 
-> run in dev mode
+### Description
 
-```shell
-$ npm run start
-```
+Todo app written in react
 
-> run in build mode
-
-```shell
-$ npm run build 
-```
 ### Screenshots
 
-![todo](https://user-images.githubusercontent.com/49094138/92328487-01e5b700-f016-11ea-8d87-e37c4e51b705.PNG)
-![mobileVersionTodo](https://user-images.githubusercontent.com/49094138/92328460-d662cc80-f015-11ea-9cc7-48574286befa.PNG)
+<img width='100%' src='https://user-images.githubusercontent.com/49094138/92328487-01e5b700-f016-11ea-8d87-e37c4e51b705.PNG'/>
+
+## How to start the application
+
+To get started, you need:
+
+1. Clone the git repository using the command:
+```
+$ git clone https://github.com/LevshinKirill/react-todo.git
+$ cd react-todo/
+```
+
+2. Install packages:
+```
+$ npm i
+```
+
+3. Run the application:
+
+    3.1. In development mode:
+    ```
+    $ npm run dev
+    ```
+
+    3.2. In production mode:
+    ```
+    $ npm run start 
+    ```
